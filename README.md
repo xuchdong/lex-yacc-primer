@@ -7,7 +7,7 @@
 -----
 
 
-#### 1. 简介
+#### 1. [简介](introduction.md)
 
 #### 2. `Lex` 和 `YACC` 能为你做什么
 
@@ -26,3 +26,4 @@
 #### 9. 感谢
 
 > 原文： http://tldp.org/HOWTO/Lex-YACC-HOWTO.html
+	
