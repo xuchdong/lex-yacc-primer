@@ -9,7 +9,7 @@
 
 #### 1. [简介](introduction.md)
 
-#### 2. `Lex` 和 `YACC` 能为你做什么
+#### 2. [`Lex` 和 `YACC` 能为你做什么](what-lex-yacc-can-do.md)
 
 #### 3. `Lex`
 
