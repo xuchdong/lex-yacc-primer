@@ -11,7 +11,7 @@
 
 #### 2. [`Lex` 和 `YACC` 能为你做什么](what-lex-yacc-can-do.md)
 
-#### 3. `Lex`
+#### 3. [`Lex`](lex.md)
 
 #### 4. `YACC`
 
