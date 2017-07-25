@@ -235,30 +235,30 @@ file                    return FILETOK;
 
 ```
 commands:
-		| commands commond SEMICOLON
-		;
+	| commands commond SEMICOLON
+	;
 
 command:
-		zone_set
-		;
+	zone_set
+	;
 			
 zone_set:
-		ZONETOK quotedname zonecontent
-		{
-			printf("Complete zone for '%s' found\n", $2);
-		}
-		;
+	ZONETOK quotedname zonecontent
+	{
+		printf("Complete zone for '%s' found\n", $2);
+	}
+	;
 			
 ```
 
-这是简介，包括我们之前提到的递归的根(`root`)。 请注意，我们定义命令命令使用分号(`;`)隔开。我们定义了一种命令 `zone_test`。它包含标示 `ZONETOK`，后面跟着 `quotedname` 和 `zonecontent`。`zoneconet` 非常简单：
+这是介绍，包括我们之前提到的递归的根(`root`)。 请注意，我们定义命令命令使用分号(`;`)隔开。我们定义了一种命令 `zone_test`。它包含标示 `ZONETOK`，后面跟着命令`quotedname` 和 `zonecontent`。命令 `zoneconet` 非常简单：
 
 ```
 zonecontent:
 	OBRACE zonestatements EBRACE
 ```
 
-它需要以 `{` 开始，然后跟 `zonestatements`，再然后是 `}`。
+它需要以 `{` 开始，然后是 `zonestatements` 命令，再然后是 `}`。
 
 ```
 quotedname:
@@ -268,7 +268,7 @@ quotedname:
 	}
 ```
 
-这个部分定义了 `quotedname`，一个文件名在两个引号之间。这里有一点特殊的是：`quotedname` 标示的值是 `FILENAME` 的值，这意味着 `quotedname` 的值是没有引号的。
+这个部分定义了 `quotedname`，一个文件名在两个引号之间。这里有一点特殊的是：`quotedname` 命令的返回值是 `FILENAME` 的值，这意味着 `quotedname` 的值是没有引号的。
 
 魔法指令 `$$=$2` 指令所做的事情就是告诉我们：我的值是第二部分的值。如果 `quotedname` 被其他规则引用，你可以访问它通过 `$` 结构，你将可以获取到我们通过 `$$=$2` 设给它的值。
 
@@ -289,7 +289,7 @@ zonestatement:
 	
 ```
 
-这个一般的状态包含了所有的状态在 `zone` 中。我们再来看下面的递归：
+这是一个一般的声明，它包含了所有的声明在 `block` 中。我们再来看下面的递归：
 
  ```
  block:
