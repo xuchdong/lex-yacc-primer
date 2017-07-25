@@ -14,7 +14,7 @@
 [`Compilers: Principles, Techniques, and tools`](https://www.amazon.com/exec/obidos/ASIN/0201100886/ref=sim_books/002-7737249-1404015) 作者： `Alfred V. Aho`，`Ravi Sethi`, `Jeffrey D. Ullman`， 被称为龙书。
 
 
-`Thomas Niemann` 也写过一遍文档讨论怎么使用 `Lex & YACC` 写一个编译器和一个计算器，你可以在 [这里](http://gitlab.rd.175game.com/q2-devops/ops/issues/14) 找到它。
+`Thomas Niemann` 也写过一遍文档讨论怎么使用 `Lex & YACC` 写一个编译器和一个计算器，你可以在 [这里](http://epaperpress.com/lexandyacc/index.html) 找到它。
 
 `The moderated usenet` 新闻组 `comp.compilers` 非常有用，但是你需要记住，这里的人并不是致力于解析帮助台。 在发信息之前，请阅读他们有趣的 [页面](https://compilers.iecc.com/)，特别是 [`FAQ`](https://compilers.iecc.com/faq.txt)。
 
