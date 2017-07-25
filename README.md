@@ -17,7 +17,7 @@
 
 #### 5. [使用 `C++` 制作一个解析器](parser-in-cpp.md)
 
-#### 6. `Lex` 和 `YACC` 内部是怎么工作的
+#### 6. [`Lex` 和 `YACC` 内部是怎么工作的](inter-lex-yacc.md)
 
 #### 7. [调试](debug.md)
 
