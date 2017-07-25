@@ -188,7 +188,7 @@ heat_switch:
 
 ## 解析一个配置文件
 
-让我们重复之前上面提到过的配置文件：
+让我们重复之前提到过的配置文件的一部分：
 
 ```
 zone "." {
@@ -235,20 +235,19 @@ file                    return FILETOK;
 
 ```
 commands:
-			|
-			commands commond SEMICOLON
-			;
+		| commands commond SEMICOLON
+		;
 
 command:
-			zone_set
-			;
+		zone_set
+		;
 			
 zone_set:
-			ZONETOK quotedname zonecontent
-			{
-				printf("Complete zone for '%s' found\n", $2);
-			}
-			;
+		ZONETOK quotedname zonecontent
+		{
+			printf("Complete zone for '%s' found\n", $2);
+		}
+		;
 			
 ```
 
