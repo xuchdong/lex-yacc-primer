@@ -6,11 +6,11 @@
 
 ```
 heat on
-		Heater on!
+    Heater on!
 heat off
-		Heater off!
+    Heater off!
 target temperature 22
-		New temperature set!
+    New temperature set!
 ```
 
 我们必须注册的标示(`token`)有：`heat`，`on/off(STATE)`，`target`, `temperature`, `NUMBER`。
@@ -39,25 +39,25 @@ temperature     return TOKTEMPERATURE;
 
 ```
 commands: /* empty */
-			| commands command
-			;
+    | commands command
+    ;
 			
 command: 
-			heat_switch
-			| target_set
-			;
-			
+    heat_switch
+    | target_set
+    ;
+ 
 heat_switch:
-			TOKHEAT STATE
-			{
-					printf("\tHeat turned on or off\n");
-			}
+    TOKHEAT STATE
+    {
+        printf("\tHeat turned on or off\n");
+    }
 
 target_set:
-			TOKTARGET TOKTEMPERATURE NUMBER
-			{
-					printf("\tTemperature set\n);
-			}
+    TOKTARGET TOKTEMPERATURE NUMBER
+    {
+        printf("\tTemperature set\n);
+    }
 ``` 
 
 第一部分被叫做根(`root`)。它告诉我们有指令集，由单独的指令构成。就像你看到的，这些规则是递归的，因为它可以再一次包含指令集。这意味着这个程序能递归的一个一个的执行一系列命令。阅读 [`Lex` 和 `YACC` 内部是怎么工作的]() 查看关于递归的重要信息。
