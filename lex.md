@@ -113,11 +113,11 @@ zone "." {
 }
 ```
 
-我们清楚看到在这个文件中有许多分类 (`tokens`)：
+我们清楚看到在这个文件中有许多不同种类的标示 (`tokens`)：
 
-- WORDs 像 `zone` 和 `type`
-- FILENAMEs 像 `/etc/bind/db.root`
-- QUOTEs 像""
+- WORDs  如 `zone` 和 `type`
+- FILENAMEs 如 `/etc/bind/db.root`
+- QUOTEs 如""
 - OBRACEs {
 - EBRACEs }
 - SEMICOLONs: ;
@@ -156,7 +156,7 @@ WORD QUOTE FILENAME QUOTE SEMICOLON
 EBRACE SEMICOLON
 ```
 
-当我们比较上面的配置文件，发现我们将配置文件整洁的标记化了(`Tokenized`)。配置文件的每一部分都被匹配，然后被转化成了标记(`token`)。
+当我们比较上面的配置文件，发现我们将配置文件整洁的标记化了(`Tokenized`)。配置文件的每一部分都被匹配，然后被转化成了标示(`token`)。
 
 这些正是我们需要的传入 `YACC` 中使用的。
 
